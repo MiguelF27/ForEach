@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For/Each</title>
+    <style>
+        h1 {
+            font-size: 24px;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 16px;
+            color: #34495e;
+        }
+        #txtNumeroFinal {
+            width: 20%;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 20%;
+        }
+        button:hover {
+            background-color: #2980b9;
+        }
+        #divNumeros {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #2ecc71;
+            white-space: pre-line;
+        }
+        .error {
+            color: #e74c3c;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contar Números</h1>
+    <label for="txtNumeroFinal">Digitar Número Final da Conatagem</label>
+    <input type="number" id="txtNumeroFinal" />
+    <button onclick="contar()">Contagem</button>
+    <div id="divNumeros"></div>
+    <script src="./foreach.js"></script>
+</body>
+</html>
